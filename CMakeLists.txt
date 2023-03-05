@@ -7,6 +7,6 @@ find_package(GTest REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable(test my_code.cpp my_code.h unitT.cpp)
+add_executable(test unitT.cpp my_code.cpp)
 
 target_link_libraries(test GTest::GTest GTest::Main)
